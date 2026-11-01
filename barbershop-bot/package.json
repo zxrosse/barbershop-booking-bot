@@ -1,0 +1,31 @@
+{
+  "name": "barbershop-booking-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for booking appointments at a barbershop: services, free time slots, cancellations, admin notifications and reminders.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/**/*.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "grammy": "^1.46.0",
+    "luxon": "^3.7.2",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.6",
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
